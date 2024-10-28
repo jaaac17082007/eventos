@@ -451,3 +451,86 @@ body:hover {
     margin: 5px 0;
     line-height: 1.6;
 }
+
+/* Estilos básicos */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background: linear-gradient(to right, #004080, #0066cc);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ffd700;
+    text-shadow: 
+        0 0 5px #ffb700,
+        0 0 10px #ffb700,
+        0 0 20px #ffd700,
+        0 0 30px #ffed80,
+        0 0 40px #ffd700,
+        0 0 55px #ffd700,
+        0 0 75px #ffd700;
+    transition: 0.3s ease-in-out;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ffb700, 0 0 10px #ffd700; }
+    100% { text-shadow: 0 0 20px #ffd700, 0 0 40px #ffed80, 0 0 60px #ffd700; }
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
