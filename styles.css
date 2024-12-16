@@ -7,6 +7,12 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
+.evento{
+    background-position: auto
+    max-height: 250px;
+    max-width: 250px;
+}
+
 header {
     background: linear-gradient(to right, #004080, #0066cc);
     color: #fff;
@@ -47,14 +53,14 @@ header {
     transform: scale(1.1);
 }
 
-.eveescolar{
+.eveescolar {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-.eveescolar:hover{
+.eveescolar:hover {
     transform: scale(1.05);
 }
 
@@ -208,24 +214,6 @@ section ul li {
     background-color: #d9eaff;
 }
 
-.cronograma table th, .cronograma table td {
-    text-align: center;
-    padding: 12px;
-}
-
-.cronograma table th {
-    background-color: #004080;
-    color: white;
-}
-
-.cronograma table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.cronograma table tr:hover {
-    background-color: #ddd;
-}
-
 .cronograma table td {
     font-size: 1em;
 }
@@ -308,6 +296,32 @@ body:hover {
     text-align: center;
 }
 
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e9f2fd;
+        }
+        tr:hover {
+            background-color: #d1e7fd;
+        }
+
 .tree li::before, .tree li::after {
     content: '';
     position: absolute;
@@ -320,217 +334,5 @@ body:hover {
 
 .tree li::after {
     right: auto;
-    left: 50%;
-    border-left: 2px dashed #8cb6ff;
-}
-
-.tree li:only-child::after, .tree li:only-child::before {
-    display: none;
-}
-
-.tree li:only-child {
-    padding-top: 0;
-}
-
-.tree li:first-child::before, .tree li:last-child::after {
-    border: 0;
-}
-
-.tree li:last-child::before {
-    border-right: 2px dashed #8cb6ff;
-}
-
-.box {
-    border: 2px solid #8cb6ff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
-    background-color: #4285f4;
-    color: white;
-    min-width: 150px;
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.box:hover {
-    background-color: #306ac3;
-}
-
-.tree ul ul::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    border-left: 2px dashed #8cb6ff;
-    width: 0;
-    height: 20px;
-}
-
-.tree ul ul {
-    display: flex;
-    justify-content: center;
-}
-
-.organigrama_maestors h1 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #004080;
-}
-
-.organigrama_maestors .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.organigrama_maestors table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.organigrama_maestors th, .organigrama_maestors td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.organigrama_maestors th {
-    background-color: #004080;
-    color: #fff;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.organigrama_maestors td {
-    background-color: #f9f9f9;
-    color: #333;
-    font-size: 1em;
-    vertical-align: top;
-}
-
-.organigrama_maestors tr:nth-child(even) td {
-    background-color: #f2f2f2;
-}
-
-.organigrama_maestors tr:hover td {
-    background-color: #e0f7fa;
-}
-
-.organigrama_maestors .time {
-    font-weight: bold;
-    color: #004080;
-}
-
-.organigrama_maestors .role {
-    font-weight: bold;
-    color: #007acc;
-    margin-bottom: 5px;
-}
-
-.organigrama_maestors .role:before {
-    content: "•";
-    color: #ffcc00;
-    margin-right: 5px;
-}
-
-.organigrama_maestors .activity {
-    font-weight: bold;
-    font-size: 1.05em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.organigrama_maestors p {
-    margin: 5px 0;
-    line-height: 1.6;
-}
-
-/* Estilos básicos */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease-in-out;
-}
-
-header {
-    background: linear-gradient(to right, #004080, #0066cc);
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-@keyframes fadeInDown {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #ffd700;
-    text-shadow: 
-        0 0 5px #ffb700,
-        0 0 10px #ffb700,
-        0 0 20px #ffd700,
-        0 0 30px #ffed80,
-        0 0 40px #ffd700,
-        0 0 55px #ffd700,
-        0 0 75px #ffd700;
-    transition: 0.3s ease-in-out;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #ffb700, 0 0 10px #ffd700; }
-    100% { text-shadow: 0 0 20px #ffd700, 0 0 40px #ffed80, 0 0 60px #ffd700; }
-}
-
-/* Estilos para secciones */
-section {
-    padding: 20px;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 1.8em;
+    left
 }
